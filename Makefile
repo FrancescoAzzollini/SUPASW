@@ -45,9 +45,9 @@ myfiles/%.jpg:  plots/%.png
 
 myfiles/manifest.txt: $(JPG_FILES)
 
-#.PHONY: figures.zip
-#figures.zip: myfiles/manifest.txt
-#	 zip -r figures.zip myfiles
+.PHONY: figures.zip
+figures.zip: myfiles/manifest.txt
+	 zip -r figures.zip myfiles
 
 
 ## clean       : Remove auto-generated files.
